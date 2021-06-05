@@ -9,6 +9,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel='stylesheet' href='https://unpkg.com/aos@2.3.0/dist/aos.css'>
 </head>
 <body>
   
@@ -34,12 +37,12 @@
 
   <section id="page1">
     <!--<img src="bar-desktop.png" alt="bar">-->
-    <p class="glitch1">
+    <p class="glitch1" data-aos="fade-up">
       <span aria-hidden="true">THE BLOODY</span>
       <span>THE BLOODY</span>
       <span aria-hidden="true">THE BLOODY</span>
     </p>
-    <p class="glitch2">
+    <p class="glitch2" data-aos="fade-up">
       <span aria-hidden="true">PARTY</span>
       <span>PARTY</span>
       <span aria-hidden="true">PARTY</span>
@@ -47,171 +50,177 @@
   </section>
 
   <section class="product">
-    <div class="t-shirt">
+    <div class="t-shirt" data-aos="fade-down">
       <img src="red-tshirt.png" alt="red t-shirt" onclick="on1()">
       <p>01 --------</p>
     </div>
 
-    <div class="jogger">
+    <div class="jogger" data-aos="fade-up">
       <img src="black-jogger.png" alt="black jogger" onclick="on2()">
       <p>02 ---</p>
     </div>
 
     <div class="socks-jacket">
-      <img src="socks1.png" alt="socks 1" onclick="on3()">
-      <img class="whyyoudonwork" src="jacket1.png" alt="jacket 1" onclick="on4()">
-      <p>03</p>
-      <p class="iguessyoutoo">---------- 04</p>
+      <img class="whyyoudonwork" src="jacket1.png" alt="jacket 1" onclick="on4()" data-aos="fade-down">
+      <img src="socks1.png" alt="socks 1" onclick="on()" data-aos="fade-up">
+      <p data-aos="fade-down">03</p>
+      <p class="iguessyoutoo" data-aos="fade-up">---------- 04</p>
     </div>
 
   </section>
 
   <!-- OVERLAY -->
   <section id="onlyt-shirt" onclick="off1()">
-    <div class="view-product">
-      <img src="red-tshirt.png" alt="red t-shirt">
-    </div>
-    <div class="product-info">
-      <h2>“the jacket of sin"</h2>
+    <div class="view-product" >
+      <img src="red-tshirt.png" alt="red t-shirt" data-aos="fade-right">
+    
+      <div class="product-info" data-aos="fade-left">
+        <h2>“the jacket of sin"</h2>
 
-      <div class="product-color">
-        <h3>color</h3>
-        <div class="black"></div>
-        <div class="red"></div>
+        <div class="product-color">
+          <h3>color</h3>
+          <div class="black"></div>
+          <div class="red"></div>
+        </div>
+
+        <div class="product-size">
+          <h3>size</h3>
+          <div> <p>s</p> </div>
+          <div> <p>m</p> </div>
+          <div> <p>l</p> </div>
+          <div> <p>xl</p> </div>
+          <div> <p>xxl</p> </div>
+        </div>
+
+        <div class="product-number">
+          <h3>number</h3>
+          <div>+</div>
+          <div>01</div>
+          <div>-</div>
+        </div>
+
+        <div class="product-purchase">
+          <div>buy now</div>
+          <div class="addtocart">add to cart</div>
+        </div>
       </div>
 
-      <div class="product-size">
-        <h3>size</h3>
-        <div> <p>s</p> </div>
-        <div> <p>m</p> </div>
-        <div> <p>l</p> </div>
-        <div> <p>xl</p> </div>
-        <div> <p>xxl</p> </div>
-      </div>
-
-      <div class="product-number">
-        <h3>number</h3>
-        <div>+</div>
-        <div>01</div>
-        <div>-</div>
-      </div>
-
-      <div class="product-purchase">
-        <div>buy now</div>
-        <div class="addtocart">add to cart</div>
-      </div>
     </div>
   </section>
 
   <section id="onlyjogger" onclick="off2()">
     <div class="view-product">
-      <img src="black-jogger.png" alt="black jogger">
-    </div>
-    <div class="product-info">
-      <h2>“the jacket of sin"</h2>
+      <img src="black-jogger.png" alt="black jogger" data-aos="fade-right">
+    
+      <div class="product-info" data-aos="fade-left">
+        <h2>“the jacket of sin"</h2>
 
-      <div class="product-color">
-        <h3>color</h3>
-        <div class="black"></div>
-        <div class="red"></div>
-      </div>
+        <div class="product-color">
+          <h3>color</h3>
+          <div class="black"></div>
+          <div class="red"></div>
+        </div>
 
-      <div class="product-size">
-        <h3>size</h3>
-        <div> <p>s</p> </div>
-        <div> <p>m</p> </div>
-        <div> <p>l</p> </div>
-        <div> <p>xl</p> </div>
-        <div> <p>xxl</p> </div>
-      </div>
+        <div class="product-size">
+          <h3>size</h3>
+          <div> <p>s</p> </div>
+          <div> <p>m</p> </div>
+          <div> <p>l</p> </div>
+          <div> <p>xl</p> </div>
+          <div> <p>xxl</p> </div>
+        </div>
 
-      <div class="product-number">
-        <h3>number</h3>
-        <div>+</div>
-        <div>01</div>
-        <div>-</div>
-      </div>
+        <div class="product-number">
+          <h3>number</h3>
+          <div>+</div>
+          <div>01</div>
+          <div>-</div>
+        </div>
 
-      <div class="product-purchase">
-        <div>buy now</div>
-        <div class="addtocart">add to cart</div>
+        <div class="product-purchase">
+          <div>buy now</div>
+          <div class="addtocart">add to cart</div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="onlysocks" onclick="off3()">
+  <section id="onlysocks" onclick="off()">
     <div class="view-product">
-      <img src="socks1.png" alt="socks 1">
-    </div>
-    <div class="product-info">
-      <h2>“the jacket of sin"</h2>
+      <img src="socks1.png" alt="socks 1" data-aos="fade-right">
+    
+      <div class="product-info" data-aos="fade-left">
+        <h2>“the jacket of sin"</h2>
 
-      <div class="product-color">
-        <h3>color</h3>
-        <div class="black"></div>
-        <div class="red"></div>
-      </div>
+        <div class="product-color">
+          <h3>color</h3>
+          <div class="black"></div>
+          <div class="red"></div>
+        </div>
 
-      <div class="product-size">
-        <h3>size</h3>
-        <div> <p>s</p> </div>
-        <div> <p>m</p> </div>
-        <div> <p>l</p> </div>
-        <div> <p>xl</p> </div>
-        <div> <p>xxl</p> </div>
-      </div>
+        <div class="product-size">
+          <h3>size</h3>
+          <div> <p>s</p> </div>
+          <div> <p>m</p> </div>
+          <div> <p>l</p> </div>
+          <div> <p>xl</p> </div>
+          <div> <p>xxl</p> </div>
+        </div>
 
-      <div class="product-number">
-        <h3>number</h3>
-        <div>+</div>
-        <div>01</div>
-        <div>-</div>
-      </div>
+        <div class="product-number">
+          <h3>number</h3>
+          <div>+</div>
+          <div>01</div>
+          <div>-</div>
+        </div>
 
-      <div class="product-purchase">
-        <div>buy now</div>
-        <div class="addtocart">add to cart</div>
+        <div class="product-purchase">
+          <div>buy now</div>
+          <div class="addtocart">add to cart</div>
+        </div>
       </div>
     </div>
   </section>
 
   <section id="onlyjacket" onclick="off4()">
     <div class="view-product">
-      <img src="jacket1.png" alt="jacket 1">
-    </div>
-    <div class="product-info">
-      <h2>“the jacket of sin"</h2>
+      <img src="jacket1.png" alt="jacket 1" data-aos="fade-right">
+    
+      <div class="product-info" data-aos="fade-left">
+        <h2>“the jacket of sin"</h2>
 
-      <div class="product-color">
-        <h3>color</h3>
-        <div class="black"></div>
-        <div class="red"></div>
-      </div>
+        <div class="product-color">
+          <h3>color</h3>
+          <div class="black"></div>
+          <div class="red"></div>
+        </div>
 
-      <div class="product-size">
-        <h3>size</h3>
-        <div> <p>s</p> </div>
-        <div> <p>m</p> </div>
-        <div> <p>l</p> </div>
-        <div> <p>xl</p> </div>
-        <div> <p>xxl</p> </div>
-      </div>
+        <div class="product-size">
+          <h3>size</h3>
+          <div> <p>s</p> </div>
+          <div> <p>m</p> </div>
+          <div> <p>l</p> </div>
+          <div> <p>xl</p> </div>
+          <div> <p>xxl</p> </div>
+        </div>
 
-      <div class="product-number">
-        <h3>number</h3>
-        <div>+</div>
-        <div>01</div>
-        <div>-</div>
-      </div>
+        <div class="product-number">
+          <h3>number</h3>
+          <div>+</div>
+          <div>01</div>
+          <div>-</div>
+        </div>
 
-      <div class="product-purchase">
-        <div>buy now</div>
-        <div class="addtocart">add to cart</div>
+        <div class="product-purchase">
+          <div>buy now</div>
+          <div class="addtocart">add to cart</div>
+        </div>
       </div>
     </div>
   </section>
 
   <script>
+    
     function on1() {
       document.getElementById("onlyt-shirt").style.display = "block";
     }
@@ -228,11 +237,12 @@
       document.getElementById("onlyjogger").style.display = "none";
     }
 
-    function on3() {
+    
+    function on() {
       document.getElementById("onlysocks").style.display = "block";
     }
     
-    function off3() {
+    function off() {
       document.getElementById("onlysocks").style.display = "none";
     }
 
@@ -244,6 +254,18 @@
       document.getElementById("onlyjacket").style.display = "none";
     }
   </script>
+
+  <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-8216c69d01441f36c0ea791ae2d4469f0f8ff5326f00ae2d00e4bb7d20e24edb.js"></script>
+
+  <script src='https://unpkg.com/aos@2.3.0/dist/aos.js'></script>
+  
+  <script id="rendered-js" >
+    AOS.init({
+    duration: 1200 });
+    //# sourceURL=pen.js
+  </script>
+
+  <script src="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-4793b73c6332f7f14a9b6bba5d5e62748e9d1bd0b5c52d7af6376f3d1c625d7e.js"></script>
 
 </body>
 </html>
