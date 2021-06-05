@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>XXOXO Collection</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  
+  <div class="navbar">
+    <div class="menu">
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+           MENU
+      </a>
+    </div>
+
+    <div class="logo">
+      <a href="#page1"><img src="logo.png" alt="XXOXO"></a>
+    </div>
+    
+    <div class="shopping-cart">
+      <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M23.3978 7.94353C23.3978 5.29944 23.2645 1 17.843 1C12.4215 1 12.2881 5.23278 12.2881 7.94353" stroke="white" stroke-width="2" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M31.2815 11.7875C31.2051 11.1959 30.6733 10.7209 30.0914 10.7209H5.59182C5.01273 10.7209 4.47947 11.1959 4.40309 11.7875L0.0189396 33.9151C-0.107433 34.9011 0.411944 35.7177 1.17851 35.7177H34.5075C35.2727 35.7177 35.792 34.9011 35.6657 33.9151L31.2815 11.7875ZM11.5938 16.2758C10.444 16.2758 9.51075 15.3426 9.51075 14.1927C9.51075 13.0429 10.444 12.1097 11.5938 12.1097C12.7437 12.1097 13.6769 13.0429 13.6769 14.1927C13.6769 15.3426 12.7437 16.2758 11.5938 16.2758ZM24.0922 16.2758C22.9423 16.2758 22.0091 15.3426 22.0091 14.1927C22.0091 13.0429 22.9437 12.1097 24.0922 12.1097C25.2406 12.1097 26.1752 13.0429 26.1752 14.1927C26.1752 15.3426 25.242 16.2758 24.0922 16.2758Z" fill="white"/>
+      </svg>
+    </div>
+  </div>
+
+  <section id="page1">
+    <!--<img src="bar-desktop.png" alt="bar">-->
+    <p class="glitch1">
+      <span aria-hidden="true">THE BLOODY</span>
+      <span>THE BLOODY</span>
+      <span aria-hidden="true">THE BLOODY</span>
+    </p>
+    <p class="glitch2">
+      <span aria-hidden="true">PARTY</span>
+      <span>PARTY</span>
+      <span aria-hidden="true">PARTY</span>
+    </p>
+  </section>
+
+  <section class="product">
+    <div class="t-shirt">
+      <img src="red-tshirt.png" alt="red t-shirt" onclick="on1()">
+      <p>01 --------</p>
+    </div>
+
+    <div class="jogger">
+      <img src="black-jogger.png" alt="black jogger" onclick="on2()">
+      <p>02 ---</p>
+    </div>
+
+    <div class="socks-jacket">
+      <img src="socks1.png" alt="socks 1" onclick="on3()">
+      <img class="whyyoudonwork" src="jacket1.png" alt="jacket 1" onclick="on4()">
+      <p>03</p>
+      <p class="iguessyoutoo">---------- 04</p>
+    </div>
+
+  </section>
+
+  <!-- OVERLAY -->
+  <section id="onlyt-shirt" onclick="off1()">
+    <div class="view-product">
+      <img src="red-tshirt.png" alt="red t-shirt">
+    </div>
+    <div class="product-info">
+      <h2>“the jacket of sin"</h2>
+
+      <div class="product-color">
+        <h3>color</h3>
+        <div class="black"></div>
+        <div class="red"></div>
+      </div>
+
+      <div class="product-size">
+        <h3>size</h3>
+        <div> <p>s</p> </div>
+        <div> <p>m</p> </div>
+        <div> <p>l</p> </div>
+        <div> <p>xl</p> </div>
+        <div> <p>xxl</p> </div>
+      </div>
+
+      <div class="product-number">
+        <h3>number</h3>
+        <div>+</div>
+        <div>01</div>
+        <div>-</div>
+      </div>
+
+      <div class="product-purchase">
+        <div>buy now</div>
+        <div class="addtocart">add to cart</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="onlyjogger" onclick="off2()">
+    <div class="view-product">
+      <img src="black-jogger.png" alt="black jogger">
+    </div>
+    <div class="product-info">
+      <h2>“the jacket of sin"</h2>
+
+      <div class="product-color">
+        <h3>color</h3>
+        <div class="black"></div>
+        <div class="red"></div>
+      </div>
+
+      <div class="product-size">
+        <h3>size</h3>
+        <div> <p>s</p> </div>
+        <div> <p>m</p> </div>
+        <div> <p>l</p> </div>
+        <div> <p>xl</p> </div>
+        <div> <p>xxl</p> </div>
+      </div>
+
+      <div class="product-number">
+        <h3>number</h3>
+        <div>+</div>
+        <div>01</div>
+        <div>-</div>
+      </div>
+
+      <div class="product-purchase">
+        <div>buy now</div>
+        <div class="addtocart">add to cart</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="onlysocks" onclick="off3()">
+    <div class="view-product">
+      <img src="socks1.png" alt="socks 1">
+    </div>
+    <div class="product-info">
+      <h2>“the jacket of sin"</h2>
+
+      <div class="product-color">
+        <h3>color</h3>
+        <div class="black"></div>
+        <div class="red"></div>
+      </div>
+
+      <div class="product-size">
+        <h3>size</h3>
+        <div> <p>s</p> </div>
+        <div> <p>m</p> </div>
+        <div> <p>l</p> </div>
+        <div> <p>xl</p> </div>
+        <div> <p>xxl</p> </div>
+      </div>
+
+      <div class="product-number">
+        <h3>number</h3>
+        <div>+</div>
+        <div>01</div>
+        <div>-</div>
+      </div>
+
+      <div class="product-purchase">
+        <div>buy now</div>
+        <div class="addtocart">add to cart</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="onlyjacket" onclick="off4()">
+    <div class="view-product">
+      <img src="jacket1.png" alt="jacket 1">
+    </div>
+    <div class="product-info">
+      <h2>“the jacket of sin"</h2>
+
+      <div class="product-color">
+        <h3>color</h3>
+        <div class="black"></div>
+        <div class="red"></div>
+      </div>
+
+      <div class="product-size">
+        <h3>size</h3>
+        <div> <p>s</p> </div>
+        <div> <p>m</p> </div>
+        <div> <p>l</p> </div>
+        <div> <p>xl</p> </div>
+        <div> <p>xxl</p> </div>
+      </div>
+
+      <div class="product-number">
+        <h3>number</h3>
+        <div>+</div>
+        <div>01</div>
+        <div>-</div>
+      </div>
+
+      <div class="product-purchase">
+        <div>buy now</div>
+        <div class="addtocart">add to cart</div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+    function on1() {
+      document.getElementById("onlyt-shirt").style.display = "block";
+    }
+    
+    function off1() {
+      document.getElementById("onlyt-shirt").style.display = "none";
+    }
+
+    function on2() {
+      document.getElementById("onlyjogger").style.display = "block";
+    }
+    
+    function off2() {
+      document.getElementById("onlyjogger").style.display = "none";
+    }
+
+    function on3() {
+      document.getElementById("onlysocks").style.display = "block";
+    }
+    
+    function off3() {
+      document.getElementById("onlysocks").style.display = "none";
+    }
+
+    function on4() {
+      document.getElementById("onlyjacket").style.display = "block";
+    }
+    
+    function off4() {
+      document.getElementById("onlyjacket").style.display = "none";
+    }
+  </script>
+
+</body>
+</html>
